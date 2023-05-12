@@ -34,7 +34,7 @@ app.use("/api/users", userRoute)
 app.use("/api/auth", authRoute)
 app.use("/api/gigs",gigRoute)
 app.use("/api/proposal",proposalRoute)
-app.use("/api/league",leagueRoute)
+app.use("/league",leagueRoute)
 app.use("/api/payment",paymentRoute)
 app.get("/server/check",(req,res)=>{
     res.send("Server working")
