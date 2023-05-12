@@ -30,12 +30,12 @@ const connect = async () => {
 }
 
 // app.use("/",userRoute)
-app.use("/api/users", userRoute)
-app.use("/api/auth", authRoute)
-app.use("/api/gigs",gigRoute)
-app.use("/api/proposal",proposalRoute)
+app.use("/users", userRoute)
+app.use("/auth", authRoute)
+app.use("/gigs",gigRoute)
+app.use("/proposal",proposalRoute)
 app.use("/league",leagueRoute)
-app.use("/api/payment",paymentRoute)
+app.use("//payment",paymentRoute)
 app.get("/server/check",(req,res)=>{
     res.send("Server working")
 })
